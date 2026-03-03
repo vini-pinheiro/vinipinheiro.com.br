@@ -20,39 +20,66 @@
         <article class="card intro bg-light-blue">
           <h2>Oi 👋</h2>
           <p>
-            Sou um Desenvolvedor apaixonado por criar aplicações sólidas, com excelente usabilidade.
+            Sou um Desenvolvedor apaixonado por criar aplicações sólidas, com
+            excelente usabilidade.
           </p>
         </article>
 
-        <div
-          class="placeholder ph-small bg-light-gray"
-          aria-hidden="true"
-        ></div>
-        <div class="placeholder ph-large bg-dark-gray" aria-hidden="true"></div>
+        <img
+          class="card image bg-light-gray"
+          src="foto-vinicius.png"
+          alt="Foto de Vinicius"
+        />
+
+        <article class="card projetos placeholder ph-large" aria-hidden="true">
+          <div class="card-image-container">
+            <img src="pdz.png" alt="Foto do projeto PDZ" />
+          </div>
+          <div class="conteudo">
+            <h3>PDZ</h3>
+            <p>
+              Aplicação web para manipulação e tratamento seguro de documentos
+              jurídicos, com foco em privacidade e conformidade com a LGPD
+            </p>
+            <p>
+              Foi realizada a implementação de censura automatizada de
+              informações sensíveis, reduzindo em mais de 30% o tempo de revisão
+              manual de documentos.
+            </p>
+            <p>
+              Ocorreu um aumento da produtividade da equipe jurídica e mitigação
+              de riscos associados ao uso de plataformas externas.
+            </p>
+
+            <div class="stack">
+              <p>Stack</p>
+              <ul class="pill-list">
+                <li class="pill-item">Flask (Python)</li>
+                <li class="pill-item">HTML</li>
+                <li class="pill-item">CSS</li>
+                <li class="pill-item">JavaScript</li>
+                <li class="pill-item">Figma (UX/UI)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
 
         <article class="card about bg-white">
           <h3 class="small-title">Sobre mim</h3>
           <p class="paragraph">
-            Atualmente, sou estudante de Sistemas de Informação na UFF e atuo
-            modernizando processos no setor público como estagiário na SEFAZ/RJ.
+            Atualmente, sou estudante de Sistemas de Informação na UFF e atuo no
+            setor público como estagiário na SEFAZ/RJ.
           </p>
           <p class="paragraph">
             Para mim, programar vai muito além de empilhar frameworks. Gosto de
             entender a tecnologia "por baixo dos panos", dominando os
-            fundamentos da web para construir arquiteturas que realmente parem
-            de pé.
-          </p>
-          <p class="paragraph">
-            Transito com facilidade entre o Front-end e o Back-end, mas meu
-            grande diferencial é a empatia pelo usuário: adoro usar o Figma para
-            desenhar soluções que reduzem o esforço cognitivo antes mesmo de
-            escrever a primeira linha de código em React ou Next.js.
+            fundamentos da web para construir arquiteturas perenes.
           </p>
           <p class="paragraph">
             Sou movido por desafios, adoro trabalhar em equipe e estou sempre
             pronto para aprender algo novo e compartilhar conhecimento.
           </p>
-        </article class="paragraph">
+        </article>
 
         <article class="card experience bg-cream">
           <h3 class="small-title">Experiência</h3>
@@ -191,7 +218,11 @@
       <footer class="footer">
         <p>© Vinicius Pinheiro - 2026</p>
         <div class="footer-right">
-          <a href="#">baixe meu cv</a>
+          <a
+            href="curriculo-vinicius.pdf"
+            download="Curriculo_Vinicius_Rocha_Pinheiro.pdf"
+            >baixe meu cv</a
+          >
           <div class="footer-icons">
             <a
               href="https://github.com/vini-pinheiro"
@@ -200,15 +231,16 @@
               aria-label="GitHub"
             >
               <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
+                x="0px"
+                y="0px"
+                width="24"
+                height="24"
+                viewBox="0 0 30 30"
               >
                 <path
-                  d="M12 2C6.48 2 2 6.58 2 12.22C2 16.73 4.87 20.55 8.84 21.9C9.34 22 9.52 21.68 9.52 21.4C9.52 21.15 9.51 20.34 9.5 19.41C6.73 20.03 6.14 18.2 6.14 18.2C5.68 16.98 5.03 16.66 5.03 16.66C4.12 16.02 5.1 16.03 5.1 16.03C6.11 16.1 6.65 17.1 6.65 17.1C7.55 18.69 9.01 18.23 9.6 17.96C9.69 17.28 9.95 16.82 10.24 16.56C8.03 16.3 5.7 15.42 5.7 11.52C5.7 10.41 6.08 9.51 6.73 8.79C6.63 8.53 6.29 7.47 6.83 6.04C6.83 6.04 7.67 5.76 9.49 7.03C10.29 6.8 11.15 6.69 12 6.69C12.85 6.69 13.71 6.8 14.51 7.03C16.33 5.76 17.17 6.04 17.17 6.04C17.71 7.47 17.37 8.53 17.27 8.79C17.92 9.51 18.3 10.41 18.3 11.52C18.3 15.43 15.96 16.29 13.75 16.55C14.12 16.88 14.45 17.53 14.45 18.53C14.45 19.96 14.44 21.1 14.44 21.4C14.44 21.68 14.62 22.01 15.13 21.9C19.09 20.55 22 16.73 22 12.22C22 6.58 17.52 2 12 2Z"
-                />
+                  d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                ></path>
               </svg>
             </a>
             <a
@@ -218,15 +250,16 @@
               aria-label="LinkedIn"
             >
               <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
+                x="0px"
+                y="0px"
+                width="24"
+                height="24"
+                viewBox="0 0 50 50"
               >
                 <path
-                  d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 17V10.46H6.26V17H8.34ZM7.3 9.57C7.96 9.57 8.5 9.03 8.5 8.37C8.5 7.71 7.96 7.17 7.3 7.17C6.63 7.17 6.1 7.71 6.1 8.37C6.1 9.03 6.63 9.57 7.3 9.57ZM17.9 17V13.28C17.9 11.29 16.85 10.36 15.45 10.36C14.32 10.36 13.82 10.98 13.53 11.42V10.46H11.45V17H13.53V13.76C13.53 12.91 13.69 12.1 14.75 12.1C15.8 12.1 15.82 13.08 15.82 13.81V17H17.9Z"
-                />
+                  d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                ></path>
               </svg>
             </a>
           </div>

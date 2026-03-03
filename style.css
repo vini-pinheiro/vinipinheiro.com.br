@@ -1,5 +1,5 @@
 :root {
-  --bg: #f8f8f8;
+  --bg: #ffffff;
   --text: #111111;
   --card-radius: 36px;
   --card-size: 288px;
@@ -50,7 +50,7 @@ h1 {
   overflow: hidden;
 }
 
-.card h2 {
+h2 {
   margin: 0;
   font-size: 38px;
   font-weight: 700;
@@ -72,7 +72,6 @@ h1 {
 }
 
 .card p,
-.card li,
 .card a {
   margin: 0;
   font-size: 16px;
@@ -106,7 +105,7 @@ h1 {
   background: #f2f2f2;
 }
 .bg-cream {
-  background: #fffef2;
+  background: #fdfbe6;
 }
 .bg-lime {
   background: #faffb9;
@@ -133,7 +132,10 @@ h1 {
   grid-column: 1;
   grid-row: 1;
 }
-.ph-small {
+.image {
+  width: var(--card-size);
+  border-radius: var(--card-radius);
+  padding: 0;
   grid-column: 2;
   grid-row: 1;
 }
@@ -245,6 +247,66 @@ h1 {
 
 .line-break {
   display: block;
+}
+.projetos {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  padding: 0;
+  overflow: hidden;
+}
+.card-image-container {
+  width: 100%;
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 36px 36px 36px;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção sem distorcer */
+  display: block; /* Remove espaços em branco extras */
+}
+
+.conteudo > p {
+  font-size: 14px;
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.pill-item {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid #4d4d4d;
+  list-style: none;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 9999px;
 }
 
 @media (max-width: 1300px) {
