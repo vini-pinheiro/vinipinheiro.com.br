@@ -191,7 +191,7 @@ h1 {
   font-style: italic;
 }
 .subtitle > p {
-    font-size: 14px;
+  font-size: 14px;
 }
 .row {
   display: flex;
@@ -267,7 +267,7 @@ h1 {
   .grid {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 
   .footer {
